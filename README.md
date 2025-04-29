@@ -1,20 +1,34 @@
-# Software Serial
+# 📡 Software Serial
 
-## Descrição
+Leitura e envio de pacotes de dados via comunicação serial, com suporte a simulação e geração de relatórios.
 
-Leitura e Envio de Pacotes de Dados Via Serial. Capacidade de Simulação e Geração de Relatórios. Inicialmente foi desenvolvido para leitura e envio de pacotes hexadecimais enviados por um módulo XBEE.
+Inicialmente desenvolvido para interagir com módulos **XBee**, este projeto permite:
 
-## Estrutura do Projeto
+- 📥 Captura de pacotes em hexadecimal
+- 📤 Transmissão de dados via porta serial
+- 🧪 Simulação de dados para testes
+- 📊 Geração de relatórios a partir dos dados coletados
 
-- `main.py`: Arquivo principal para iniciar a aplicação.
-- `XBeeDataViewer.py`: Implementação da classe XBeeDataViewer para a interface gráfica.
-- `RealXBeeData.py`: Implementação da classe RealXBeeData para a comunicação com o dispositivo XBee.
-- `XBeeInterface.py`: Implementação da classe XBeeInterface para enviar dados para o dispositivo XBee.
+---
 
-## Contribuindo
+## 🧩 Estrutura do Projeto
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para relatar bugs ou propor novos recursos. Se deseja contribuir com código, por favor, faça um fork do repositório, implemente suas mudanças e envie um pull request.
+| Arquivo/Pasta             | Descrição                                                               |
+|--------------------------|-------------------------------------------------------------------------|
+| `main.py`                | Arquivo principal para iniciar a aplicação                              |
+| `XBeeDataViewer.py`      | Interface gráfica para visualização dos dados                           |
+| `RealXBeeData.py`        | Comunicação com o dispositivo XBee                                      |
+| `envia.py`               | Script para envio de dados via serial                                   |
+| `data_log1.txt`          | Exemplo de log de dados coletados                                       |
+| `Software Serial.pdf`    | Documento explicativo sobre o funcionamento do software                 |
+| `SoftwareSerial/`        | Diretório contendo módulos auxiliares                                   |
+| `__pycache__/`           | Arquivos compilados automaticamente pelo Python                         |
 
-## Licença
+---
 
-Este projeto é licenciado sob a [Licença MIT](LICENSE).
+## 🚀 Como Usar
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/gilsonfiho/Serial.git
